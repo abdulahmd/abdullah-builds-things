@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/abdullah-builds-things/",
+  base: mode === "production" ? "/abdullah-builds-things/" : "/",
   build: {
     outDir: "docs",
   },
